@@ -186,3 +186,118 @@ else if(age >= 25 && health === "sick") {
 else {
     console.log("Does not satisfy all peramiters")
 }
+
+// TODO Need a solution aroung 4pm ET
+
+// ? Ternaries
+
+/* 
+    A quick way of creating an if/else conditional.
+*/
+
+lightSwitch = "on"
+
+// if (lightSwitch == "on") {
+//     console.log("The light is on")
+// }
+
+/* 
+    Ternary Syntax:
+
+    conditional ? code block if true : code block if false
+*/
+
+lightSwitch == "on" ? console.log("The light is on") : console.log("The light is off")
+
+// Chaining Ternaries
+
+season == 1 ? console.log("Spring")
+    : season = 2 ? console.log("Summer")
+    : season = 3 ? console.log(Fall)
+    : season = 4 ? console.log("Winter")
+    : console.log("Input is from 1 - 4")
+
+let result = lightSwitch ? "do this" : "do that"
+
+console.log(result)
+
+// TERNARY CHALLENGE
+
+// Take this if/else statement and make it into a ternary.
+
+let lampOn = false;
+let daytime = false;
+
+// if (lampOn == true && daytime != true) {
+//   console.log("The lamp is on during the night");
+// } else if (lampOn != true && daytime != true) {
+//   console.log("The lamp is off during the night");
+// } else if (lampOn == true && daytime == true) {
+//   console.log("The lamp is on during the day");
+// } else if (lampOn != true && daytime == true) {
+//   console.log("The lamp is off during the day");
+// } else {
+//   console.log("What lamp?");
+// }
+
+lampOn == true && daytime != true ? console.log("The lamp is on during the night")
+    : lampOn != true && daytime != true ? console.log("The lamp is off during the night")
+    : lampOn == true && daytime == true ? console.log("The lamp is on during the day")
+    : lampOn != true && daytime == true ? console.log("The lamp is off during the day")
+    : console.log("What lamp?")
+
+
+
+//  ? Switch Statements
+
+/* 
+    Switches execute a block of code dependendent upon a different case.
+
+    We ask a question thaqt requires a specific response determined by our answer.
+*/
+
+let uprightInstructor = "Matt"
+
+
+// Information that may change depending 
+switch(uprightInstructor) {
+    // condition on which code after : will execute
+    case "Paul":
+        console.log(`${uprightInstructor} is a lead SD Instructor`)
+        // break is used to stop other cases from evaluating
+        break
+    case "Rob":
+        console.log(`${uprightInstructor} is a lead SD Instructor`)
+        break
+    case "Matt":
+        console.log(`${uprightInstructor} left me for CS and I'm still salty`)
+        break
+    default:
+        console.log(`${uprightInstructor} may or may not be working for Upright`)
+}
+
+// ? SWITCH CHALLENGE
+
+/* 
+Create a 'grade' variable that holds a string value of 'A,B,C,D or F.
+Create a switch statement that passes that variable to check.  Depending on the grade, console log a string result that indicates what they need (ex: A = 'Passed!', F = 'Failing', etc.).
+*/
+
+let grade = "F"
+
+switch(grade) {
+    case "A":
+        console.log(`${grade} - Passed with flying colors!`)
+        break
+    case "B":
+        console.log(`${grade} - Passed!`)
+        break
+    case "C":
+        console.log(`${grade} - Passed, but need some work`)
+        break
+    case "D":
+        console.log(`${grade} - Did not pass, needs work`)
+        break
+    case "F":
+        console.log(`${grade} - Failed!`)
+}
