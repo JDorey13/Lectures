@@ -156,8 +156,8 @@ if (lightSwitch != true) {
     If neither of these satisfy, state so.
 */
 
-age = 
-health = ""
+let age = 25
+let health = ""
 
 if (age <= 17 && health === "healthy") {
     console.log("You're to young to do anything")
@@ -175,7 +175,7 @@ else if(age >= 21 && age < 25 && health === "healthy") {
     console.log("You can drink")
 }
 else if(age >= 21 && age < 25 && health === "sick") {
-    console.log("You can drink")
+    console.log("You're to sick to drink'")
 }
 else if(age >= 25 && health === "healthy") {
     console.log("You can rent a car")
@@ -226,7 +226,7 @@ console.log(result)
 // Take this if/else statement and make it into a ternary.
 
 let lampOn = false;
-let daytime = false;
+let daytime = true;
 
 // if (lampOn == true && daytime != true) {
 //   console.log("The lamp is on during the night");
